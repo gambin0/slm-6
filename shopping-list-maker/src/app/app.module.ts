@@ -6,10 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from '../api/in-memory-data.service';
+import { CreateRecipeComponent } from './recipe/create-recipe/create-recipe.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreateRecipeComponent
   ],
   imports: [
     BrowserModule,
