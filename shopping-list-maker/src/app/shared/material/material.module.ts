@@ -1,10 +1,23 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {
+  MatInputModule,
+  MatAutocompleteModule,
+  MatListModule,
+  MatFormFieldModule
+} from '@angular/material';
 
 @NgModule({
   imports: [
-    CommonModule
+    MatInputModule,
+    MatAutocompleteModule,
+    MatListModule,
+    MatFormFieldModule
   ],
-  declarations: []
+  exports: [
+    MatInputModule,
+    MatAutocompleteModule,
+    MatListModule,
+    MatFormFieldModule
+  ],
 })
 export class MaterialModule { }
