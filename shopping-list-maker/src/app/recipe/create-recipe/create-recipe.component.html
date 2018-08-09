@@ -1,9 +1,21 @@
 
 <div>Create a Recipe</div>
 
-<form class="example-form">
+<form [formGroup]="recipeForm" class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Recipe name" value="Bestest Recipe">
+    <input matInput placeholder="Recipe name" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Recipe Link" formControlName="link">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Servings" type="number" formControlName="servings">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Duration" type="number" formControlName="duration">
   </mat-form-field>
 
 
